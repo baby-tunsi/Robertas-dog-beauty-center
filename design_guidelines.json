@@ -1,0 +1,170 @@
+{
+  "project_title": "Roberta's Beauty Dog Center - Italian Boutique Dog Grooming Salon",
+  "app_type": "hybrid_fullstack",
+  "language": "it",
+  "theme": {
+    "default_mode": "light",
+    "emotional_archetype": "Organic & Earthy / Italian Ligurian Boutique Warmth",
+    "color_palette": {
+      "warm_cream": "#FDFBF7",
+      "sand_beige": "#F4EFE6",
+      "terracotta": "#C86D51",
+      "terracotta_hover": "#B35B40",
+      "sage_green": "#6E8B74",
+      "sage_soft": "#E8EFE9",
+      "espresso_dark": "#2B231F",
+      "warm_grey_text": "#5A504B",
+      "card_bg": "#FFFFFF",
+      "border_tint": "rgba(43, 35, 31, 0.08)",
+      "accent_gold": "#DAA520",
+      "status_pending_bg": "#FEF3C7",
+      "status_pending_text": "#92400E",
+      "status_confirmed_bg": "#D1FAE5",
+      "status_confirmed_text": "#065F46",
+      "status_rejected_bg": "#FEE2E2",
+      "status_rejected_text": "#991B1B"
+    }
+  },
+  "typography": {
+    "headline_font": "Playfair Display or Cormorant Garamond / Serif Display",
+    "body_font": "Plus Jakarta Sans, Manrope, or Inter",
+    "mono_font": "JetBrains Mono",
+    "scale": {
+      "h1": "text-3xl sm:text-4xl lg:text-5xl font-serif tracking-tight leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-serif tracking-tight",
+      "h3": "text-xl sm:text-2xl font-serif",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed text-[#5A504B]",
+      "caption": "text-xs sm:text-sm uppercase tracking-widest font-semibold text-[#6E8B74]"
+    }
+  },
+  "responsive": {
+    "breakpoint": "mobile-first",
+    "layout": "Design mobile-first with flex-col, grid-cols-1 on small screens, scaling up to md:grid-cols-2 lg:grid-cols-3. Ensure mobile padding (p-4) and spacing (gap-6) avoid awkward margins. Touch targets minimum 44px height.",
+    "typography": "Mobile fluid scaling starting at text-3xl for H1 up to text-5xl on desktop. Form inputs size text-base (16px) on mobile to prevent iOS auto-zoom.",
+    "overflow_guard": "Use overflow-x-hidden on root wrapper, max-w-full on images and containers.",
+    "tap_targets": "All buttons, icon triggers, tab switches, and links must have min-height of 44px and generous padding."
+  },
+  "image_urls": {
+    "hero_grooming_trim": {
+      "url": "https://images.pexels.com/photos/19145894/pexels-photo-19145894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Professional groomer trimming a fluffy dog in a warm salon environment",
+      "placement": "Hero section badge/card overlay or main hero image frame"
+    },
+    "cocker_spaniel_post_groom": {
+      "url": "https://images.pexels.com/photos/21952862/pexels-photo-21952862.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Beautifully groomed American Cocker Spaniel with shiny coat",
+      "placement": "Services section or Taglio & Tosatura feature card"
+    },
+    "dog_in_bath_towel": {
+      "url": "https://images.unsplash.com/photo-1647002380358-fc70ed2f04e0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwyfHxncm9vbWluZyUyMGJhdGglMjBkb2clMjBmb2FtfGVufDB8fHx8MTc4ODU2NjI2OXww&ixlib=rb-4.1.0&q=85",
+      "description": "Dog sitting peacefully in a bathtub next to a soft towel",
+      "placement": "Bagno & Asciugatura service card / Spa treatments"
+    },
+    "frenchie_bath_smile": {
+      "url": "https://images.unsplash.com/photo-1597595735781-6a57fb8e3e3d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxncm9vbWluZyUyMGJhdGglMjBkb2clMjBmb2FtfGVufDB8fHx8MTc4ODU2NjI2OXww&ixlib=rb-4.1.0&q=85",
+      "description": "Happy small dog getting a relaxing bubbly bath",
+      "placement": "Spa & Trattamenti Extra card or gallery item"
+    },
+    "shih_tzu_running": {
+      "url": "https://images.unsplash.com/photo-1534361960057-19889db9621e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHw0fHxoYXBweSUyMGRvZ3xlbnwwfHx8fDE3ODg1NjYyNjZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Fluffy white puppy running happily after salon visit",
+      "placement": "About us / Salon Story section illustration"
+    },
+    "golden_retriever_tulip": {
+      "url": "https://images.unsplash.com/photo-1552053831-71594a27632d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGRvZ3xlbnwwfHx8fDE3ODg1NjYyNjZ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Happy Golden Retriever with a flower, representing love and care",
+      "placement": "Testimonials or Booking section side accent"
+    }
+  },
+  "key_components": [
+    {
+      "name": "Header & Mobile Nav",
+      "description": "Glassmorphism sticky header with Ligurian terracotta accents, logo with paw badge, navigation links (Home, Servizi, Chi Siamo, Contatti, Prenota), and Staff Access button.",
+      "data_testids": [
+        "nav-home-link",
+        "nav-services-link",
+        "nav-about-link",
+        "nav-contact-link",
+        "nav-book-button",
+        "nav-staff-login-button"
+      ]
+    },
+    {
+      "name": "Hero Section",
+      "description": "Warm Ligurian terracotta & cream backdrop, elegant Italian typography ('Il Benessere del Tuo Cane nel Cuore della Liguria'), key call-to-actions, badge with phone (+39 338 292 9207), rating badge, and photo stack.",
+      "data_testids": [
+        "hero-title",
+        "hero-book-cta",
+        "hero-phone-cta"
+      ]
+    },
+    {
+      "name": "Services Grid (I Nostri Servizi)",
+      "description": "5 Core Services cards with price range, estimated duration, description, and direct 'Prenota Questo Servizio' button: 1) Bagno & Asciugatura, 2) Taglio & Tosatura, 3) Taglio Unghie, 4) Pulizia Orecchie & Denti, 5) Spa & Trattamenti Extra.",
+      "data_testids": [
+        "service-card-bagno",
+        "service-card-taglio",
+        "service-card-unghie",
+        "service-card-orecchie",
+        "service-card-spa"
+      ]
+    },
+    {
+      "name": "Online Booking Section & Modal/Form",
+      "description": "Friendly multi-step or unified booking form with validation: Nome, Cognome, Telefono, Razza Cane, Taglia Cane, Servizio richiesto, Data preferita, Note particolari.",
+      "data_testids": [
+        "booking-form",
+        "booking-first-name-input",
+        "booking-last-name-input",
+        "booking-phone-input",
+        "booking-dog-breed-input",
+        "booking-service-select",
+        "booking-date-input",
+        "booking-notes-input",
+        "booking-submit-button"
+      ]
+    },
+    {
+      "name": "Staff Login & Verification Dashboard",
+      "description": "Staff Portal with login tab (Email + Password, demo credentials provided: staff@robertabeautydog.it / password123). Dashboard displays list of pending, confirmed, and rejected bookings with customer phone, first name, last name verification panel before clicking 'Conferma' or 'Rifiuta'. Filterable by status.",
+      "data_testids": [
+        "staff-login-email-input",
+        "staff-login-password-input",
+        "staff-login-submit-button",
+        "staff-dashboard-container",
+        "booking-verification-panel",
+        "verify-name-display",
+        "verify-phone-display",
+        "confirm-booking-button",
+        "reject-booking-button",
+        "status-filter-select"
+      ]
+    },
+    {
+      "name": "Salon Story & Values (Chi Siamo)",
+      "description": "Story of Roberta and her passion for dogs in Borghetto Santo Spirito. Warm photos, gentle hygiene approach, low-stress handling.",
+      "data_testids": ["about-story-container"]
+    },
+    {
+      "name": "Contact, Location & Opening Hours",
+      "description": "Address: Corso Europa, 22, 17020 Borghetto Santo Spirito SV. Phone: +39 338 292 9207. Interactive embedded Google Maps or custom stylized map card, opening hours table (Lun-Sab 08:30 - 18:30, Dom Chiuso).",
+      "data_testids": [
+        "contact-address",
+        "contact-phone-link",
+        "opening-hours-table",
+        "map-container"
+      ]
+    }
+  ],
+  "instructions_to_main_agent": [
+    "Build the frontend in React JS with Tailwind CSS and Lucide React or Phosphor icons.",
+    "Ensure all copy is grammatically fluent, authentic, and inviting Italian (e.g., 'Roberta's Beauty Dog Center - Toilettatura Professionale e Spa per Cani').",
+    "Provide a smooth Staff Login switch or page view so the owner Roberta and her staff can switch to the 'Area Riservata Staff' to view and confirm appointments.",
+    "In the Staff Dashboard, prominently display the customer verification fields (Nome, Cognome, Numero di Telefono) and an explicit 'Verifica Dati' section before confirming or rejecting.",
+    "All interactive elements MUST include data-testid attributes matching the design_guidelines specification.",
+    "Use warm terracotta (#C86D51), sage green (#6E8B74), and creamy warm whites (#FDFBF7) to avoid AI purple/violet gradients.",
+    "Use Sonner for toasts when bookings are submitted or staff actions are completed.",
+    "Ensure complete responsive mobile-first optimization."
+  ]
+}
